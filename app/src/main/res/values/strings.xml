@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Rapido Plus</string>
+    <string name="numero_carte">N° Carte rapido</string>
+    <string name="password">Mot de passe</string>
+    <string name="confirm_password">Confirmer le mot de passe</string>
+    <string name="connecter">CONNEXION</string>
+    <string name="pas_compte">Vous n\'avez pas de compte</string>
+    <string name="inscrire">S\'inscrire</string>
+    <string name="client_firstname">Prénom</string>
+    <string name="client_lastname">Nom</string>
+    <string name="client_phone">N° Tel mobile</string>
+    <string name="immatriculation">N° Immatriculation</string>
+    <string name="mail">Email</string>
+    <string name="btn_inscription">Inscription</string>
+    <string name="menu_deconnexion">Déconnexion</string>
+    <string name="menu_profil">Profil</string>
+    <string name="menu_aide">Aide</string>
+    <string name="menu_aide_problem">Signaler un problème</string>
+    <string name="menu_aide_pagem">Page d\'aide</string>
+    <string name="menu_aide_confident">Confidentialité et sécurité</string>
+
+    <string name="app_name_quittance">TFE Marchand</string>
+    <string name="timbre_1000">1 000 XOF</string>
+    <string name="timbre_2000">2 000 XOF</string>
+    <string name="timbre_5000">5 000 XOF</string>
+    <string name="timbre_10000">10 000 XOF</string>
+    <string name="timbre_message">Vous souhaitez acheter un timbre de :</string>
+    <string name="minus">-</string>
+    <string name="zero">0</string>
+    <string name="plus">+</string>
+    <string name="retour">Retour</string>
+    <string name="suivant">Suivant</string>
+    <string name="recap">Récapitulatif</string>
+    <string name="global_amount">Montant global de votre achat:  <strong>%1$d XOF</strong></string>
+    <string name="validation">Validation :</string>
+    <string name="timbre">Timbre fiscal</string>
+    <string name="total">Total</string>
+    <string name="quantite">Quantité</string>
+    <string name="prixU">Prix unitaire</string>
+
+
+    <string name="prompt_connecting">Connecting</string>
+    <string name="prompt_wait">Please Wait&#8230;</string>
+    <string name="dialog_sure">Sure</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="prompt_title">Prompt</string>
+    <string name="fill_text">%1$s</string>
+
+
+    <string name="login">login</string>
+    <string name="error">error</string>
+    <string name="fe_montant_global">XOF</string>
+    <string name="timbre_fe_valider">Valider</string>
+    <string name="timbre_fe_annuler">Annuler</string>
+
+    <string name="success_finish">Terminé avec succes</string>
+    <string name="img_success">Transaction effectue avec succes</string>
+
+
+    <string name="client_nin">N° Identification nationale</string>
+
+    <string name="valider">Valider</string>
+
+    <string name="quittance_fe_tittre_montant_global">Quittance passeport</string>
+    <string name="timbre_fe_tittre_montant_global">Timbre fiscal</string>
+    <string name="imprimer_une_seule">Imprimer</string>
+
+    <string name="url_current">URL EN COURS: </string>
+    <string name="new_url">Nouveeau URL :</string>
+
+
+    <string name="home_second">Home Second</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+</resources>

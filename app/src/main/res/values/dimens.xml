@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_banner_height">130dp</dimen>
+    <dimen name="dimen_banner_width">330dp</dimen>
+    <dimen name="dimen_banner_margin_start">20dp</dimen>
+    <dimen name="dimen_banner_margin_top">2dp</dimen>
+
+    <dimen name="dimen_container_height">280dp</dimen>
+    <dimen name="dimen_container_width">340dp</dimen>
+    <dimen name="dimen_container_margin_start">10dp</dimen>
+    <dimen name="dimen_container_margin_top">2dp</dimen>
+    <dimen name="dimen_container_title_margin_end">50dp</dimen>
+
+    <!-- pour les boutons affichants les montants des timbres-->
+    <dimen name="dimen_btn1_height">75dp</dimen>
+    <dimen name="dimen_btn1_width">180dp</dimen>
+    <dimen name="dimen_btn1_size">25sp</dimen>
+    <dimen name="dimen_btn1_margin_start">-50dp</dimen>
+    <dimen name="dimen_btn1_margin_start_div">60dp</dimen>
+    <dimen name="dimen_btn1_margin_top">20dp</dimen>
+    <dimen name="dimen_btn1_padding_start">5dp</dimen>
+
+    <!-- pour les boutons d'incrementation des nombres de timbres-->
+    <dimen name="dimen_btn2_height">18dp</dimen>
+    <dimen name="dimen_btn2_width">20dp</dimen>
+    <dimen name="dimen_btn2_margin_start">10dp</dimen>
+    <dimen name="dimen_btn2plus_margin_top">23dp</dimen>
+    <dimen name="dimen_btn2_margin_left">4dp</dimen>
+    <dimen name="dimen_btn2minus_margin_top">33dp</dimen>
+
+    <!-- pour les boutons affichant le  nombre de timbres-->
+    <dimen name="dimen_btn3_height">29dp</dimen>
+    <dimen name="dimen_btn3_size">13sp</dimen>
+    <dimen name="dimen_btn3_width">35dp</dimen>
+    <dimen name="dimen_btn3_margin_start">100dp</dimen>
+    <dimen name="dimen_btn3_margin_end">65dp</dimen>
+    <dimen name="dimen_btn3_margin_start_div">90dp</dimen>
+    <dimen name="dimen_btn3_margin_top">43dp</dimen>
+
+    <!-- table de presentation dimension-->
+    <dimen name="dimen_table_height">230dp</dimen>
+    <dimen name="dimen_table_width">370dp</dimen>
+    <dimen name="dimen_table_margin_start">10dp</dimen>
+    <dimen name="dimen_table_margin_top">10dp</dimen>
+
+    <dimen name="dimen_row1_height">100dp</dimen>
+    <dimen name="dimen_row1_width">100dp</dimen>
+    <dimen name="dimen_row1_margin_start">10dp</dimen>
+    <dimen name="dimen_row1_margin_top">20dp</dimen>
+    <dimen name="dimen_diver_padding">5dp</dimen>
+
+    <!-- dimensions texte des lignes-->
+    <dimen name="dimen_row1_txt_height">300dp</dimen>
+    <dimen name="dimen_row1_txt_width">60dp</dimen>
+    <dimen name="dimen_row1_txt_margin_start">8dp</dimen>
+    <dimen name="dimen_row1_txt_margin_top">8dp</dimen>
+    <dimen name="dimen_row2_txt_margin_top">20dp</dimen>
+    <dimen name="dimen_row2_txt_padding_start">5dp</dimen>
+
+    <!-- pour les boutons suivant et retor-->
+    <dimen name="dimen_btn4_height">60dp</dimen>
+    <dimen name="dimen_btn4_width">100dp</dimen>
+    <dimen name="dimen_btn4_margin_start">20dp</dimen>
+    <dimen name="dimen_btn4_margin_separate">140dp</dimen>
+    <dimen name="dimen_btn4_margin_top">20dp</dimen>
+
+    <!-- pour les boutons suivant et retor-->
+    <dimen name="dimen_txt_row">20sp</dimen>
+    <dimen name="dimen_text_size_normal">13sp</dimen>
+    <dimen name="dimen_tf_width">160dp</dimen>
+    <dimen name="dimen_tf_height">35dp</dimen>
+
+    <dimen name="dimen_tf_login_width">280dp</dimen>
+    <dimen name="dimen_tf_login_height">40dp</dimen>
+
+    <dimen name="dimen_tf_montant_width">200dp</dimen>
+    <dimen name="dimen_tf_montant_height">50dp</dimen>
+
+    <!-- pour les boutons suivant et retor-->
+    <dimen name="dimen_btn5_height">40dp</dimen>
+    <dimen name="dimen_btn5_width">130dp</dimen>
+
+    <dimen name="dimen_bottom_height">300dp</dimen>
+    <dimen name="dimen_bottom_width">60dp</dimen>
+    <dimen name="txt_title">40sp</dimen>
+    <dimen name="tbr_size">15sp</dimen>
+
+    <!-- pour les boutons suivant et retor-->
+    <dimen name="dimen_btn5_login_height">40dp</dimen>
+    <dimen name="dimen_btn5_login_width">180dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="padding_layou">15dp</dimen>
+    <dimen name="defaultTextSize">20sp</dimen>
+    <dimen name="input_height">43dp</dimen>
+    <dimen name="height_layout2">300dp</dimen>
+    <dimen name="height_layout1">150dp</dimen>
+    <dimen name="paddingHeader">10dp</dimen>
+    <dimen name="heightImgHeader">40dp</dimen>
+
+    <dimen name="paddingLayoutMiddleDetail">25dp</dimen>
+    <dimen name="paddingLayoutMiddle">30dp</dimen>
+    <dimen name="paddingButton">6dp</dimen>
+    <dimen name="marginButton">15dp</dimen>
+    <dimen name="marginElement">40dp</dimen>
+
+    <dimen name="textHeight">15sp</dimen>
+    <dimen name="textHeight1">18sp</dimen>
+    <dimen name="textHeight2">22sp</dimen>
+    <dimen name="textHeight3">30sp</dimen>
+
+    <dimen name="signheigh">220dp</dimen>
+    <dimen name="paddingSign">10dp</dimen>
+    <dimen name="paddingPanel">15dp</dimen>
+
+    <dimen name="panelMargin">15dp</dimen>
+    <dimen name="elevationCard">15dp</dimen>
+    <dimen name="logoWidth">200dp</dimen>
+
+    <dimen name="cardWidth">170dp</dimen>
+    <dimen name="cardHeight">210dp</dimen>
+    <dimen name="cardMargin">2dp</dimen>
+
+    <dimen name="defaultMargin">15dp</dimen>
+    <dimen name="defaultMargin1">25dp</dimen>
+    <dimen name="defaultMargin2">9dp</dimen>
+    <dimen name="defaultPadding">15dp</dimen>
+    <dimen name="defaultPadding2">5dp</dimen>
+
+
+    <dimen name="icon_dim">85dp</dimen>
+    <dimen name="icon_succes">220dp</dimen>
+
+    <dimen name="cardControle">170dp</dimen>
+    <dimen name="cardControleH">200dp</dimen>
+
+    <dimen name="paddingButtonLarge">25dp</dimen>
+    <dimen name="buttonLargeHegh">120dp</dimen>
+
+    <dimen name="cardHeightCirculation">100dp</dimen>
+    <dimen name="marginEditTOP">5dp</dimen>
+
+    <dimen name="dimen_text_size_normal_login">15dp</dimen>
+    <dimen name="dimen_get_margin">50dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+
+
+</resources>

@@ -1,0 +1,94 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="diotaliProcessingStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="colorAccent">@color/colorGreen</item>
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">@color/colorWhite</item>
+        <!-- Used for the background -->
+        <item name="android:background">@color/colorBlack</item>
+    </style>
+
+    <style name="labelMenuStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">@dimen/defaultMargin</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
+    </style>
+
+    <style name="TitleTextQuittance">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorMarron</item>
+        <item name="android:padding">@dimen/paddingButton</item>
+        <item name="android:textSize">@dimen/textHeight</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="TitleTextQuittanceTop">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorMarron</item>
+        <item name="android:padding">@dimen/paddingButton</item>
+        <item name="android:textSize">@dimen/textHeight</item>
+    </style>
+
+    <style name="EditTextQuittance">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:padding">@dimen/paddingButton</item>
+        <item name="android:textSize">@dimen/textHeight</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginTop">@dimen/textHeight3</item>
+        <item name="android:background">@drawable/edt_quittance_background</item>
+
+    </style>
+
+    <style name="EditTextInscription">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:padding">@dimen/paddingButton</item>
+        <item name="android:textSize">@dimen/textHeight</item>
+        <item name="android:layout_marginTop">@dimen/textHeight3</item>
+        <item name="android:background">@drawable/inscription_form</item>
+
+    </style>
+
+    <style name="TextAutreQuittance">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/textHeight</item>
+        <item name="android:layout_marginTop">@dimen/textHeight3</item>
+
+    </style>
+
+    <style name="EditTextQuittanceDesabled">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:padding">@dimen/paddingButton</item>
+        <item name="android:textSize">@dimen/textHeight</item>
+        <item name="android:background">@drawable/edt_quittance_background</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

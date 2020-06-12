@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/txt_num_carte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carte N° :"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/txt_sens"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sens :"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/txt_gare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gare :"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/txt_voie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voie :"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/txt_credit_initial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crédit initial :"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/txt_montant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Montant :"
+                android:textStyle="bold"
+                android:textColor="#993920"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/txt_credit_restant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crédit restant :"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/txt_solde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Solde"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="25dp">
+
+            <TextView
+                android:id="@+id/num_carte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carte N° :"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/sens"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sens :"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/gare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gare :"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/voie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voie :"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/credit_initial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crédit initial :"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/montant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Montant :"
+                android:textStyle="bold"
+                android:textColor="#993920"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/credit_restant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crédit restant :"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/solde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Solde"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

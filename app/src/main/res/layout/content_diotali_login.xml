@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/connexion_with_bacground"
+    tools:context=".DiotaliLogin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            >
+
+
+            <TextView
+                android:id="@+id/txt_v_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="280dp"
+                android:textSize="@dimen/dimen_text_size_normal"
+                android:hint=""
+                android:textColor="@color/colorRed"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_contravention" />
+
+            <EditText
+                android:id="@+id/edt_carte_rapido"
+                android:layout_width="@dimen/dimen_tf_login_width"
+                android:layout_height="@dimen/dimen_tf_login_height"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edt_background2"
+                android:elevation="10dp"
+                android:ems="20"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:hint="@string/numero_carte"
+                android:inputType="text"
+                android:textSize="@dimen/dimen_text_size_normal_login"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_v_error" />
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="@dimen/dimen_tf_login_width"
+                android:layout_height="@dimen/dimen_tf_login_height"
+                android:layout_marginBottom="18dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edt_background2"
+                android:elevation="10dp"
+                android:ems="20"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textSize="@dimen/dimen_text_size_normal_login"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_login" />
+
+            <Button
+                android:id="@+id/btn_connect"
+                android:layout_width="@dimen/dimen_tf_login_width"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btn_background"
+                android:text="@string/connecter"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/pas_compte"
+                android:textStyle="normal"
+                android:textSize="12sp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/btn_inscrire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/inscrire"
+                android:textColor="#993920"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
