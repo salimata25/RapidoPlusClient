@@ -38,7 +38,7 @@ import sn.diotali.rapido_plus_usager.utils.Constants;
 public class InfoCompteActivity extends DiotaliMain implements View.OnClickListener{
 
     public static final int REQUEST_IMAGE = 100;
-    EditText txt_cni, txt_nom, txt_prenom, txt_tel, txt_adresse, txt_email;
+    EditText txt_num_carte, txt_nom, txt_prenom, txt_tel, txt_matricule, txt_email;
     TextView txt_error;
     SharedPreferences sharedPreferences;
 
@@ -51,52 +51,54 @@ public class InfoCompteActivity extends DiotaliMain implements View.OnClickListe
         setContentView(R.layout.activity_info_compte);
         ButterKnife.bind(this);
 
-        loadProfileDefault();
+        //loadProfileDefault();
 
-        findViewById(R.id.btn_close).setOnClickListener(this);
+        findViewById(R.id.baniere).bringToFront();
         findViewById(R.id.btn_modifier).setOnClickListener(this);
+        findViewById(R.id.menu_bar).setOnClickListener(this);
 
         txt_error = findViewById(R.id.txt_v_error);
         txt_error.setVisibility(View.INVISIBLE);
 
-        txt_cni = findViewById(R.id.txt_cni);
+        txt_num_carte = findViewById(R.id.txt_num_carte);
         txt_nom = findViewById(R.id.txt_nom);
         txt_prenom = findViewById(R.id.txt_prenom);
-        txt_adresse = findViewById(R.id.txt_adresse);
+        txt_matricule = findViewById(R.id.txt_matricule);
         txt_tel = findViewById(R.id.txt_tel);
         txt_email = findViewById(R.id.txt_email);
 
-        txt_cni.setText(Constants.newUser.getNin());
+        /*txt_num_carte.setText(Constants.newUser.getNin());
         txt_nom.setText(Constants.newUser.getLastName());
         txt_prenom.setText(Constants.newUser.getFirstName());
         txt_adresse.setText(Constants.newUser.getAddress());
         txt_tel.setText(Constants.newUser.getPhone());
-        txt_email.setText(Constants.newUser.getEmail());
+        txt_email.setText(Constants.newUser.getEmail());*/
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.btn_close:
-                finish();
-                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+            case R.id.menu_bar:
+                Intent intent = new Intent (getApplicationContext(), NavBarActivity.class);
+                startActivity(intent);
+                overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
                 break;
             case R.id.btn_modifier:
-                String cni = txt_cni.getText().toString();
+                String carte = txt_num_carte.getText().toString();
                 String nom = txt_nom.getText().toString();
                 String prenom = txt_prenom.getText().toString();
                 String email = txt_email.getText().toString();
                 String tel = txt_tel.getText().toString();
-                String adresse = txt_adresse.getText().toString();
+                String matricule = txt_matricule.getText().toString();
 
                 String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
                 String regex = " ";
                 String replacement = "";
 
-                if (cni.isEmpty() || cni.replaceAll(regex, replacement).isEmpty()) {
-                    txt_cni.setError("CNI");
-                } else if (cni.length() != 13) {
-                    txt_cni.setError("Veuillez saisir un NIN valide !");
+                if (carte.isEmpty() || carte.replaceAll(regex, replacement).isEmpty()) {
+                    txt_num_carte.setError("Numéro de la carte rapido");
+                } else if (carte.length() != 13) {
+                    txt_num_carte.setError("Veuillez saisir un numéro valide !");
                 } else if (nom.isEmpty() || nom.replaceAll(regex, replacement).isEmpty()) {
                     txt_nom.setError("Nom");
                 } else if (prenom.isEmpty() || prenom.replaceAll(regex, replacement).isEmpty()) {
@@ -109,15 +111,15 @@ public class InfoCompteActivity extends DiotaliMain implements View.OnClickListe
                     txt_tel.setError("Téléphone");
                 } else if (tel.length() < 9 || tel.length() > 14) {
                     txt_tel.setError("Veuillez saisir un numéro valide !");
-                } else if (adresse.isEmpty() || adresse.replaceAll(regex, replacement).isEmpty()) {
-                    txt_adresse.setError("Adresse");
+                } else if (matricule.isEmpty() || matricule.replaceAll(regex, replacement).isEmpty()) {
+                    txt_matricule.setError("Numéro d'immatriculation");
                 }else {
                     User response = new User();
                     response.setFirstName(prenom);
                     response.setLastName(nom);
-                    response.setAddress(adresse);
+                    response.setAddress(matricule);
                     response.setPhone(tel);
-                    response.setNin(cni);
+                    response.setNin(matricule);
                     response.setEmail(email);
                     Constants.newUser = response;
 
@@ -197,7 +199,7 @@ public class InfoCompteActivity extends DiotaliMain implements View.OnClickListe
         imgProfile.setColorFilter(ContextCompat.getColor(this, android.R.color.transparent));
     }
 
-    @OnClick({R.id.img_plus, R.id.img_profil})
+    @OnClick({R.id.img_profil})
     void onProfileImageClick() {
         Dexter.withActivity(this)
                 .withPermissions(Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE)

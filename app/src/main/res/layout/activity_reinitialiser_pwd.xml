@@ -1,164 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_without_logo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_achat"
     tools:context=".ReinitialiserPwdActivity">
 
-    <android.support.constraint.ConstraintLayout
+    <LinearLayout
+        android:id="@+id/baniere"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <ImageView
-            android:id="@+id/trait_1"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
-            android:src="@drawable/trait_jaune"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            />
-
-        <TextView
-            android:id="@+id/txt_inscription"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:text="Réinitialisation du mot de passe"
-            android:textColor="@color/colorWhite"
-            android:textStyle="normal"
-            android:textSize="18sp"
-            app:layout_constraintTop_toBottomOf="@id/trait_1"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
-
-        <ImageView
-            android:id="@+id/trait_2"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/trait_jaune"
-            app:layout_constraintTop_toBottomOf="@id/txt_inscription"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            />
-
-        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="360dp"
-            android:orientation="vertical"
-            android:background="@drawable/textview_border"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="30dp"
-            app:layout_constraintTop_toBottomOf="@id/trait_2"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            >
+            android:layout_height="match_parent"
+            android:layout_marginTop="-130dp"
+            android:src="@drawable/bande_rouge_con_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:textStyle="bold"
-                android:textSize="16dp"
-                android:text="Réinitialiser le mot de passe"
-                android:textColor="#bca13f"/>
+    </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="3dp"
-                android:textStyle="bold"
-                android:text="Un code de vérification vous sera envoyé." />
+    <include layout="@layout/content_reinitialiser_pwd"/>
 
-            <TextView
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="0dp"
-                android:textStyle="bold"
-                android:text="Vous pourrez utiliser ce code pour choisir un nouveau mot de passe" />
-
-            <TextView
-                android:id="@+id/txt_v_error"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="3dp"
-                android:layout_marginTop="10dp"
-                android:textSize="@dimen/dimen_text_size_normal"
-                android:hint=""
-                android:textColor="@color/colorRed"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/img_contravention" />
-
-            <EditText
-                android:id="@+id/edt_email"
-                android:layout_width="@dimen/dimen_tf_login_width"
-                android:layout_height="@dimen/dimen_tf_login_height"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/edt_background2"
-                android:ems="20"
-                android:gravity="center"
-                android:layout_gravity="center_horizontal"
-                android:hint="Email"
-                android:inputType="textEmailAddress"
-                android:textSize="@dimen/dimen_text_size_normal_login"
-                android:textColor="@color/colorBlack"
-                android:textColorHint="@color/colorBlack"
-                app:layout_constraintHorizontal_bias="0.502"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txt_v_error" />
-
-            <EditText
-                android:id="@+id/edt_tel"
-                android:layout_width="@dimen/dimen_tf_login_width"
-                android:layout_height="@dimen/dimen_tf_login_height"
-                android:layout_marginBottom="18dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/edt_background2"
-                android:ems="20"
-                android:gravity="center"
-                android:layout_gravity="center_horizontal"
-                android:hint="N° Mobile"
-                android:inputType="number"
-                android:textSize="@dimen/dimen_text_size_normal_login"
-                android:textColor="@color/colorBlack"
-                android:textColorHint="@color/colorBlack"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/edt_login" />
-
-            <Button
-                android:id="@+id/btn_connect"
-                android:layout_width="@dimen/dimen_tf_login_width"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="25dp"
-                android:layout_marginTop="15dp"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/btn_background"
-                android:text="Envoyer le code"
-                android:textColor="@color/colorWhite"
-                android:textStyle="bold"
-                android:textAllCaps="false"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/edt_password" />
-
-        </LinearLayout>
-
-    </android.support.constraint.ConstraintLayout>
-</ScrollView>
+</android.support.constraint.ConstraintLayout>

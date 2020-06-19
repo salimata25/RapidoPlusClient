@@ -14,7 +14,7 @@ import sn.diotali.rapido_plus_usager.utils.Constants;
 
 public class InscriptionActivity extends DiotaliMain {
     Button btn_valider;
-    EditText txt_carte_rapido, txt_nom, txt_prenom, txt_email, txt_tel, txt_adresse, txt_pwd, txt_confirm_pwd;
+    EditText txt_carte_rapido, txt_nom, txt_prenom, txt_email, txt_tel, txt_matricule, txt_pwd, txt_confirm_pwd;
     TextView txt_error;
 
     @Override
@@ -27,7 +27,7 @@ public class InscriptionActivity extends DiotaliMain {
         txt_prenom = findViewById(R.id.txt_prenom);
         txt_email = findViewById(R.id.txt_email);
         txt_tel = findViewById(R.id.txt_tel);
-        txt_adresse = findViewById(R.id.txt_adresse);
+        txt_matricule = findViewById(R.id.txt_matricule);
         txt_pwd = findViewById(R.id.txt_pwd);
         txt_confirm_pwd = findViewById(R.id.txt_confirm_pwd);
         txt_error = findViewById(R.id.txt_v_error);
@@ -45,7 +45,7 @@ public class InscriptionActivity extends DiotaliMain {
                 String prenom = txt_prenom.getText().toString();
                 String email = txt_email.getText().toString();
                 String tel = txt_tel.getText().toString();
-                String adresse = txt_adresse.getText().toString();
+                String matricule = txt_matricule.getText().toString();
                 String pwd = txt_pwd.getText().toString();
                 String confirm_pwd = txt_confirm_pwd.getText().toString();
 
@@ -55,7 +55,7 @@ public class InscriptionActivity extends DiotaliMain {
 
                 if (carte_rapido.isEmpty() || carte_rapido.replaceAll(regex, replacement).isEmpty()) {
                     txt_carte_rapido.setError("Numéro de la carte rapido");
-                } else if (carte_rapido.length() != 13) {
+                } else if (carte_rapido.length() < 7 || carte_rapido.length() > 10) {
                     txt_carte_rapido.setError("Veuillez saisir un numéro valide !");
                 } else if (nom.isEmpty() || nom.replaceAll(regex, replacement).isEmpty()) {
                     txt_nom.setError("Nom");
@@ -69,8 +69,10 @@ public class InscriptionActivity extends DiotaliMain {
                     txt_tel.setError("Téléphone");
                 } else if (tel.length() < 9 || tel.length() > 14) {
                     txt_tel.setError("Veuillez saisir un numéro valide !");
-                } else if (adresse.isEmpty() || adresse.replaceAll(regex, replacement).isEmpty()) {
-                    txt_adresse.setError("Adresse");
+                } else if (matricule.isEmpty() || matricule.replaceAll(regex, replacement).isEmpty()) {
+                    txt_matricule.setError("Numéro d'immatriculation");
+                } else if (matricule.length() < 9 || matricule.length() > 10) {
+                    txt_tel.setError("Veuillez saisir une immatriculation valide !");
                 } else if (pwd.isEmpty() || pwd.replaceAll(regex, replacement).isEmpty()) {
                     txt_pwd.setError("Mot de passe");
                 } else if (confirm_pwd.isEmpty() || confirm_pwd.replaceAll(regex, replacement).isEmpty()) {
@@ -84,7 +86,7 @@ public class InscriptionActivity extends DiotaliMain {
                     response.setMessage("SUCCESS");
                     response.setFirstName(prenom);
                     response.setLastName(nom);
-                    response.setAddress(adresse);
+                    response.setAddress(matricule);
                     response.setPhone(tel);
                     response.setNin(carte_rapido);
                     response.setEmail(email);

@@ -19,13 +19,14 @@ public class TfeMenu extends AppCompatActivity {
         setContentView(R.layout.activity_tfe_menu);
 
         getObjectById();
+        findViewById(R.id.baniere).bringToFront();
 
 
         menu_bar.setOnClickListener(onButtonClickListener);
 
         menu_solde.setOnClickListener(onButtonClickListener);
         menu_historique.setOnClickListener(onButtonClickListener);
-        btn_retour.setOnClickListener(onButtonClickListener);
+        //btn_retour.setOnClickListener(onButtonClickListener);
     }
 
 
@@ -35,7 +36,7 @@ public class TfeMenu extends AppCompatActivity {
             switch (v.getId()){
 
                 case R.id.menu_solde:
-                    intent = new Intent (getApplicationContext(), TfeQuittanceActivity.class);
+                    intent = new Intent (getApplicationContext(), SoldeActivity.class);
                     startActivity(intent);
                     break;
 
@@ -44,9 +45,9 @@ public class TfeMenu extends AppCompatActivity {
                     startActivity(intent);
                     break;
 
-                case R.id.btn_retour:
+                /*case R.id.btn_retour:
                     finish();
-                    break;
+                    break;*/
 
                 case R.id.menu_bar:
                     intent = new Intent (getApplicationContext(), NavBarActivity.class);
@@ -70,7 +71,7 @@ public class TfeMenu extends AppCompatActivity {
         menu_solde = findViewById(R.id.menu_solde);
         menu_historique = findViewById(R.id.menu_historique);
         menu_bar = findViewById(R.id.menu_bar);
-        btn_retour = findViewById(R.id.btn_retour);
+        //btn_retour = findViewById(R.id.btn_retour);
     }
 
 }

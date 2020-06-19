@@ -19,7 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".AideActivity"></activity>
+        <activity android:name=".BienvenuActivity"></activity>
+        <activity android:name=".SoldeActivity" />
+        <activity android:name=".AideActivity" />
         <activity android:name=".ExpandableHistoriqueActivity" />
         <activity android:name=".ImagePickerActivity" />
         <activity android:name=".InfoTimbreFinishActivity" />

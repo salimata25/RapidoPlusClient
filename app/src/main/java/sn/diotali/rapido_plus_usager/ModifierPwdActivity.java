@@ -22,7 +22,8 @@ public class ModifierPwdActivity extends DiotaliMain implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_modifier_pwd);
 
-        findViewById(R.id.btn_close).setOnClickListener(this);
+        findViewById(R.id.baniere).bringToFront();
+        findViewById(R.id.menu_bar).setOnClickListener(this);
         findViewById(R.id.btn_modifier).setOnClickListener(this);
 
         txt_error = findViewById(R.id.txt_v_error);
@@ -72,6 +73,12 @@ public class ModifierPwdActivity extends DiotaliMain implements View.OnClickList
                     }, 2000);
 
                 }
+
+            case R.id.menu_bar:
+                Intent intent = new Intent (getApplicationContext(), NavBarActivity.class);
+                startActivity(intent);
+                overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+                break;
         }
     }
 

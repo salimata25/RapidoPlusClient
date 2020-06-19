@@ -102,6 +102,14 @@ public class DiotaliLogin extends DiotaliMain implements DoubleTapCallback {
             carte_rapido.addTextChangedListener(new ChangeParams());
             password.addTextChangedListener(new ChangeParams());
 
+            findViewById(R.id.pwd_oublie).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(DiotaliLogin.this, ReinitialiserPwdActivity.class);
+                    startActivity(intent);
+                }
+            });
+
             btn_inscrire = findViewById(R.id.btn_inscrire);
             btn_inscrire.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -256,6 +264,7 @@ public class DiotaliLogin extends DiotaliMain implements DoubleTapCallback {
                 case R.id.button_close:
                     myDialogSign.dismiss();
                     break;
+
             }
         }
     };

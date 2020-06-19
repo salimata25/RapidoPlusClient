@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,7 +9,7 @@
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp">
 
         <android.support.constraint.ConstraintLayout
             android:id="@+id/baniere"
@@ -48,7 +48,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
-                android:text="Aide"
+                android:text="Home"
                 android:textColor="@color/colorWhite"
                 android:textStyle="bold"
                 android:textSize="18sp"
@@ -71,7 +71,7 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="660dp"
+            android:layout_height="800dp"
             android:background="#330e06"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -81,7 +81,7 @@
 
             <ImageView
                 android:id="@+id/trait_1"
-                android:layout_width="280dp"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
                 android:layout_marginBottom="5dp"
@@ -121,7 +121,7 @@
 
             <ImageView
                 android:id="@+id/trait_6"
-                android:layout_width="280dp"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="0dp"
@@ -161,7 +161,7 @@
 
             <ImageView
                 android:id="@+id/trait_3"
-                android:layout_width="280dp"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
@@ -201,7 +201,7 @@
 
             <ImageView
                 android:id="@+id/trait_4"
-                android:layout_width="280dp"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="5dp"
@@ -241,7 +241,7 @@
 
             <ImageView
                 android:id="@+id/trait_5"
-                android:layout_width="280dp"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:layout_marginLeft="10dp"
@@ -253,4 +253,4 @@
         </LinearLayout>
 
     </android.support.constraint.ConstraintLayout>
-</ScrollView>
+</android.support.constraint.ConstraintLayout>

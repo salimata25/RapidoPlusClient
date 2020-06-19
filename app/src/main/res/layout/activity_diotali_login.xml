@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_without_logo"
     android:fitsSystemWindows="true"
     tools:context="sn.diotali.rapido_plus_usager.DiotaliLogin">
 
-    <!--<include layout="@layout/contravention_toolbar"/>-->
-   <!--<android.support.design.widget.AppBarLayout
-       android:layout_width="match_parent"
-       android:layout_height="64dp"
-       android:background="?attr/colorPrimary"
-       android:theme="@style/AppTheme.AppBarOverlay">
+    <LinearLayout
+        android:id="@+id/baniere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-130dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-       <android.support.v7.widget.Toolbar
-           android:id="@+id/toolbar"
-           android:layout_width="match_parent"
-           android:layout_height="?attr/actionBarSize"
-           android:fitsSystemWindows="true"
-           android:background="?attr/colorPrimary"
-           android:visibility="visible"
-           app:logo="@drawable/logo_action_bar"
-           app:popupTheme="@style/AppTheme.AppBarOverlay"
-           app:title="@string/app_name"
-           app:titleMarginStart="0dp"
-           app:titleTextColor="@color/white" />
-   </android.support.design.widget.AppBarLayout>-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bande_rouge_con_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </LinearLayout>
 
     <include layout="@layout/content_diotali_login" />
 

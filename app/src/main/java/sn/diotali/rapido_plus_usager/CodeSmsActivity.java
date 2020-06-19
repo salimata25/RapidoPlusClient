@@ -72,7 +72,7 @@ public class CodeSmsActivity extends DiotaliMain implements View.OnClickListener
                     sharedPreferences.edit().putString("NinStorage", response.getNin()).commit();
                     sharedPreferences.edit().putString("EmailStorage", response.getEmail()).commit();
 
-                    Intent intent = new Intent(this, DiotaliLogin.class);
+                    Intent intent = new Intent(this, BienvenuActivity.class);
                     Constants.newUser = response;
                     startActivity(intent);
                 }

@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhite"
+    android:background="@drawable/app_background"
     tools:context="sn.diotali.rapido_plus_usager.ExpandableHistoriqueActivity">
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/baniere"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
         android:background="#330e06"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -18,37 +18,73 @@
 
         <ImageView
             android:id="@+id/logo_dgid"
-            android:layout_width="150dp"
-            android:layout_height="60dp"
-            android:src="@drawable/dgid_logo_blanc"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="10dp"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:src="@drawable/logo_rapido_menu"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="0dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=">"
+            android:textColor="@color/colorWhite"
+            android:textSize="21sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/logo_dgid"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Historique"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
 
         <ImageView
             android:id="@+id/menu_bar"
             android:layout_width="35dp"
             android:layout_height="25dp"
-            android:src="@drawable/menu_simple"
-            android:layout_marginTop="20dp"
+            android:src="@drawable/icone_menu"
+            android:layout_marginTop="0dp"
             android:layout_marginEnd="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="@id/logo_dgid"
             />
     </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/icone_historique"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/icon_historique"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/baniere"/>
 
     <ExpandableListView
         android:id="@+id/expandableListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="280dp"
         android:divider="@android:color/darker_gray"
         android:dividerHeight="0.5dp"
         android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
-        app:layout_constraintTop_toBottomOf="@id/baniere" />
+        app:layout_constraintTop_toBottomOf="@id/icone_historique" />
 
 </android.support.constraint.ConstraintLayout>
